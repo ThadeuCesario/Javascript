@@ -147,6 +147,7 @@
     </main>
     <footer class="rodape">
         COD3R & ALUNOS 	&copy; <?= date('Y'); ?>
+        teste
     </footer>
 </body>
 </html>
