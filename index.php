@@ -20,7 +20,7 @@
                     <h3>Módulo 01 - Básico</h3>
                     <ul>
                         <li>
-                            <a href="#">Exercício A</a>
+                            <a href="exercicio.php">Exercício A</a>
                         </li>
                         <li>
                             <a href="#">Exercício B</a>
@@ -147,7 +147,6 @@
     </main>
     <footer class="rodape">
         COD3R & ALUNOS 	&copy; <?= date('Y'); ?>
-        teste
     </footer>
 </body>
 </html>
