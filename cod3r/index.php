@@ -26,7 +26,7 @@
                             <a href="exercicio.php?dir=basico&file=html">Integração HTML</a>
                         </li>
                         <li>
-                            <a href="#">Exercício C</a>
+                            <a href="exercicio.php?dir=basico&file=css">Integração CSS</a>
                         </li>
                     </ul>
                 </div>
