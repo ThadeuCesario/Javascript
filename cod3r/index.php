@@ -31,6 +31,9 @@
                         <li>
                             <a href="exercicio.php?dir=basico&file=comentarios">Comentários PHP</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=basico&file=desafio">Desafio</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo vermelho">
