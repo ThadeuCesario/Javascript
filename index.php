@@ -45,6 +45,9 @@
                         <li>
                             <a href="exercicio.php?dir=tipos&file=float">Tipo Float</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=tipos&file=ar">Operações Aritméticas</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo azul">
