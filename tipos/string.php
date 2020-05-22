@@ -98,4 +98,5 @@ echo '<br />';
  echo str_replace('isso', 'aquilo', 'Trocar isso');
 
  echo '<br />';
+ 
 ?>
