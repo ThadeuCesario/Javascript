@@ -13,6 +13,11 @@ const getFiles = directory => {
   });
 }
 
+const removeInvalidExtensions = files => {
+  return files.filter(file => file.includes('.srt'))
+}
+
 module.exports = {
   getFiles,
+  removeInvalidExtensions,
 };
