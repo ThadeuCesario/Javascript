@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso - RocketSeat Starter</title>
+</head>
+<body>
+  <div id='app'>
+    <input id="nome" />
+  </div>
+
+  <script>
+    var linkElement = document.createElement('a');
+    var textElement = document.createTextNode('Acessar Google');
+    var containerElement = document.getElementById('app');
+    var inputElement = document.querySelector('#nome');
+
+    linkElement.setAttribute('href', 'http://www.google.com.br');
+    linkElement.setAttribute('title', 'Acesse o Google');
+
+    linkElement.appendChild(textElement);
+    containerElement.appendChild(linkElement);
+    containerElement.removeChild(inputElement);
+  </script>
+</body>
+</html>

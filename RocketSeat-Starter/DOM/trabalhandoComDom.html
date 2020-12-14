@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com a DOM</title>
+</head>
+<body>
+    <div id="app">
+      <input type="text" name="nome" id="nome" class="classe-input"/>
+      <button class="botao">Adicionar</button>
+    </div>
+
+    <footer>
+      <script>
+        var inputElementId = document.getElementById('nome');
+        var inputElementClass = document.getElementsByClassName('classe-input')[0];
+        var inputElementTag = document.getElementsByTagName('input')[0];
+        var inputElementQuerySelector = document.querySelector('body div#app input'); //Podemos percorrer a DOM
+        var inputElementQuerySelectorComAtributo = document.querySelector('body div#app input[name="nome"]');
+
+        console.log('Utilizando id', inputElementId);
+        console.log('Utilizando Classe', inputElementClass);
+        console.log('Utilizando Tag', inputElementTag);
+        console.log('Utilizando o query selector', inputElementQuerySelector);
+        console.log('Utilizando o query selector com atributo', inputElementQuerySelectorComAtributo); //Sempre retorna um único elemento, diferente do querySelectorAll
+
+        //Criando evento de clique
+
+        var btnElement = document.querySelector('button.botao');
+        btnElement.onclick = function(){
+          var text = document.getElementById('nome').value;
+          alert(text);
+        }
+      </script>
+    </footer>
+</body>
+</html>
