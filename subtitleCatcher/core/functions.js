@@ -14,7 +14,7 @@ const getFiles = directory => {
 }
 
 const removeInvalidExtensions = files => {
-  return files.filter(file => file.includes('.srt'))
+  return files.filter(file => file.endsWith('.srt'))
 }
 
 module.exports = {
