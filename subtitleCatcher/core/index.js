@@ -3,5 +3,6 @@ const path = require('path');
 const utils = require('./functions');
 
 const point = path.join(__dirname, '..', 'legendas');
-const teste = utils.getFiles(point);
-teste.then(utils.removeInvalidExtensions).then(console.log);
+const files = utils.getFiles(point);
+
+files.then(utils.removeInvalidExtensions).then((files, index) => console.log(files, index));

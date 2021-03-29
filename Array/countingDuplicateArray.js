@@ -7,6 +7,6 @@ function countDuplicatesValues(array) {
   }
   
 
-const arrayExample = [1,5,4,7,8,1,2,3,4,5,2,3,4,5,8,9,5,7,8,9];
+const arrayExample = ['Thadeu', 'Thadeu', 'Leo', 'Melati', 'Melati'];
 
 console.log(countDuplicatesValues(arrayExample));
