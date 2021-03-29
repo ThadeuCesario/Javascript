@@ -13,19 +13,8 @@ const getFiles = directory => {
   });
 }
 
-
 const removeInvalidExtensions = files => {
   return files.filter(file => file.endsWith('.srt'))
-}
-
-const readFile = pathFile => {
-  return new Promise(function(resolve, reject){
-    try {
-     fs.readFile(pathFile, {}, (_, content) => resolve(content.toString())); 
-    } catch (error) {
-      reject(error);
-    }
-  });
 }
 
 module.exports = {
