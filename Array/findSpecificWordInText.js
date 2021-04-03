@@ -5,7 +5,7 @@ const mentions = ['Thadeu', 'Thadeu Santos', 'Thadeu Cesário', 'React', 'React 
 function filterSpecificNamesMentioned(mentions, text) {
     const finalMentions = [];
     let candidateMentions = [];
-    const arrayConversation = conversation.replace(/[.,\/#?!$%\^&\*;:{}=\-_`~()]/g,"").split(' ');
+    const arrayConversation = text.replace(/[.,\/#?!$%\^&\*;:{}=\-_`~()]/g,"").split(' ');
     const mentionsTreated = mentions.map(mention => mention.replace(' ', ''));
     
     for(let i = 0; i < mentionsTreated.length; i++) {
@@ -26,4 +26,4 @@ function filterSpecificNamesMentioned(mentions, text) {
     return finalMentions;
 }
 
-console.log(filterSpecificNamesMentioned(mentions, conversation));
+filterSpecificNamesMentioned(mentions, conversation);
